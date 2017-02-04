@@ -21,4 +21,4 @@ def pbot(message, channel=''):
 	if channel: msg = '[%s %s] <%s> %s' % (time.strftime('%H:%M:%S', time.gmtime()), channel, red.format('BOT'), message)
 	else: msg = '[%s] <%s> %s' % (time.strftime('%H:%M:%S', time.gmtime()), red.format('BOT'), message)
 	
-	print msg
+	print msg.encode('utf-8')
